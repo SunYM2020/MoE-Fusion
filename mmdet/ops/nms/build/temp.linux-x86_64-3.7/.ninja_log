@@ -1,0 +1,4 @@
+# ninja log v5
+16	8848	1700065832073495200	/root/nas-public-tju/sym1/ReDet/mmdet/ops/nms/build/temp.linux-x86_64-3.7/src/nms_kernel.o	533004a672182758
+16	18645	1700065841861494700	/root/nas-public-tju/sym1/ReDet/mmdet/ops/nms/build/temp.linux-x86_64-3.7/src/nms_cuda.o	e5a18c7319e464e1
+1	18352	1700065860717493600	/root/nas-public-tju/sym1/ReDet/mmdet/ops/nms/build/temp.linux-x86_64-3.7/src/nms_cpu.o	4ab5aa2752b3df36

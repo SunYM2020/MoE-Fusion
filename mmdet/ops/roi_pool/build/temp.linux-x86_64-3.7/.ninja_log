@@ -1,0 +1,3 @@
+# ninja log v5
+67	9042	1700065742529500300	/root/nas-public-tju/sym1/ReDet/mmdet/ops/roi_pool/build/temp.linux-x86_64-3.7/src/roi_pool_kernel.o	b632e830c73389a9
+66	19133	1700065752605499700	/root/nas-public-tju/sym1/ReDet/mmdet/ops/roi_pool/build/temp.linux-x86_64-3.7/src/roi_pool_cuda.o	69579ac64031a1f0

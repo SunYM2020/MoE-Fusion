@@ -1,0 +1,3 @@
+# ninja log v5
+19	9054	1700065960353487900	/root/nas-public-tju/sym1/ReDet/mmdet/ops/poly_nms/build/temp.linux-x86_64-3.7/src/poly_nms_kernel.o	cd9f1717c50632fa
+19	18632	1700065969921487400	/root/nas-public-tju/sym1/ReDet/mmdet/ops/poly_nms/build/temp.linux-x86_64-3.7/src/poly_nms_cuda.o	e271042cf4b4351e

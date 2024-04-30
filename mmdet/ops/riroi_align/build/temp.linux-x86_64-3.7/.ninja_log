@@ -1,0 +1,3 @@
+# ninja log v5
+15	9468	1700065786453497800	/root/nas-public-tju/sym1/ReDet/mmdet/ops/riroi_align/build/temp.linux-x86_64-3.7/src/riroi_align_kernel.o	fedd9b3db166d81b
+14	19075	1700065796053497300	/root/nas-public-tju/sym1/ReDet/mmdet/ops/riroi_align/build/temp.linux-x86_64-3.7/src/riroi_align_cuda.o	391b7000b3996956

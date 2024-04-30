@@ -1,0 +1,27 @@
+ninja_required_version = 1.3
+cxx = c++
+nvcc = /usr/local/cuda-11.0/bin/nvcc
+
+cflags = -pthread -B /root/anaconda3/envs/redet/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/root/anaconda3/envs/redet/lib/python3.7/site-packages/torch/include -I/root/anaconda3/envs/redet/lib/python3.7/site-packages/torch/include/torch/csrc/api/include -I/root/anaconda3/envs/redet/lib/python3.7/site-packages/torch/include/TH -I/root/anaconda3/envs/redet/lib/python3.7/site-packages/torch/include/THC -I/usr/local/cuda-11.0/include -I/root/anaconda3/envs/redet/include/python3.7m -c
+post_cflags = -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=roi_align_rotated_cuda -D_GLIBCXX_USE_CXX11_ABI=0 -std=c++14
+cuda_cflags = -I/root/anaconda3/envs/redet/lib/python3.7/site-packages/torch/include -I/root/anaconda3/envs/redet/lib/python3.7/site-packages/torch/include/torch/csrc/api/include -I/root/anaconda3/envs/redet/lib/python3.7/site-packages/torch/include/TH -I/root/anaconda3/envs/redet/lib/python3.7/site-packages/torch/include/THC -I/usr/local/cuda-11.0/include -I/root/anaconda3/envs/redet/include/python3.7m -c
+cuda_post_cflags = -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=roi_align_rotated_cuda -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_80,code=sm_80 -std=c++14
+ldflags = 
+
+rule compile
+  command = $cxx -MMD -MF $out.d $cflags -c $in -o $out $post_cflags
+  depfile = $out.d
+  deps = gcc
+
+rule cuda_compile
+  command = $nvcc $cuda_cflags -c $in -o $out $cuda_post_cflags
+
+
+
+build /root/nas-public-tju/sym1/ReDet/mmdet/ops/roi_align_rotated/build/temp.linux-x86_64-3.7/src/roi_align_rotated_cuda.o: compile /root/nas-public-tju/sym1/ReDet/mmdet/ops/roi_align_rotated/src/roi_align_rotated_cuda.cpp
+build /root/nas-public-tju/sym1/ReDet/mmdet/ops/roi_align_rotated/build/temp.linux-x86_64-3.7/src/roi_align_rotated_kernel.o: cuda_compile /root/nas-public-tju/sym1/ReDet/mmdet/ops/roi_align_rotated/src/roi_align_rotated_kernel.cu
+
+
+
+
+

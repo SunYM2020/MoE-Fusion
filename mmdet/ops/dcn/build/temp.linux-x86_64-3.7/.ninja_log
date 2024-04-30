@@ -1,0 +1,5 @@
+# ninja log v5
+47	9998	1700065873565492900	/root/nas-public-tju/sym1/ReDet/mmdet/ops/dcn/build/temp.linux-x86_64-3.7/src/deform_conv_cuda_kernel.o	f03981ec4842b15c
+47	21907	1700065885457492200	/root/nas-public-tju/sym1/ReDet/mmdet/ops/dcn/build/temp.linux-x86_64-3.7/src/deform_conv_cuda.o	71cb3b6a60900f2e
+18	9388	1700065895413491600	/root/nas-public-tju/sym1/ReDet/mmdet/ops/dcn/build/temp.linux-x86_64-3.7/src/deform_pool_cuda_kernel.o	a8f03942c1c69f68
+18	19014	1700065905029491100	/root/nas-public-tju/sym1/ReDet/mmdet/ops/dcn/build/temp.linux-x86_64-3.7/src/deform_pool_cuda.o	7da3bf88e27b7cfb

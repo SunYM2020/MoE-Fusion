@@ -1,0 +1,3 @@
+# ninja log v5
+21	9544	1700065764985499000	/root/nas-public-tju/sym1/ReDet/mmdet/ops/roi_align_rotated/build/temp.linux-x86_64-3.7/src/roi_align_rotated_kernel.o	c165a3ac36814192
+21	18911	1700065774341498500	/root/nas-public-tju/sym1/ReDet/mmdet/ops/roi_align_rotated/build/temp.linux-x86_64-3.7/src/roi_align_rotated_cuda.o	6550bb89f850d1b2

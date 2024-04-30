@@ -1,0 +1,3 @@
+# ninja log v5
+23	8799	1700065938249489200	/root/nas-public-tju/sym1/ReDet/mmdet/ops/masked_conv/build/temp.linux-x86_64-3.7/src/masked_conv2d_kernel.o	335a618255613eb9
+23	19093	1700065948529488600	/root/nas-public-tju/sym1/ReDet/mmdet/ops/masked_conv/build/temp.linux-x86_64-3.7/src/masked_conv2d_cuda.o	38bfd1caff7fa3de

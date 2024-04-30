@@ -1,0 +1,3 @@
+# ninja log v5
+3	9602	1700065808433496600	/root/nas-public-tju/sym1/ReDet/mmdet/ops/psroi_align_rotated/build/temp.linux-x86_64-3.7/src/psroi_align_rotated_kernel.o	941899864a389b45
+2	19012	1700065817833496000	/root/nas-public-tju/sym1/ReDet/mmdet/ops/psroi_align_rotated/build/temp.linux-x86_64-3.7/src/psroi_align_rotated_cuda.o	ce56fad4952e6fb9

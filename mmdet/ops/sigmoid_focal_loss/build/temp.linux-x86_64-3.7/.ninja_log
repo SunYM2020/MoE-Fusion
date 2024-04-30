@@ -1,0 +1,3 @@
+# ninja log v5
+27	9093	1700065916897490400	/root/nas-public-tju/sym1/ReDet/mmdet/ops/sigmoid_focal_loss/build/temp.linux-x86_64-3.7/src/sigmoid_focal_loss_cuda.o	ab601a0a00387d02
+27	18722	1700065926517489900	/root/nas-public-tju/sym1/ReDet/mmdet/ops/sigmoid_focal_loss/build/temp.linux-x86_64-3.7/src/sigmoid_focal_loss.o	32f3401862e64945
