@@ -1,6 +1,6 @@
 ### Multi-modal Gated Mixture of Local-to-Global Experts for Dynamic Image Fusion
 
-![](docs/imgs/moefusion.png)
+![](imgs/moefusion.png)
 
 > **[Multi-modal Gated Mixture of Local-to-Global Experts for Dynamic Image Fusion (ICCV 2023)](https://openaccess.thecvf.com/content/ICCV2023/html/Cao_Multi-Modal_Gated_Mixture_of_Local-to-Global_Experts_for_Dynamic_Image_Fusion_ICCV_2023_paper.html)**,  
 > Bing Cao<sup>\*</sup>, Yiming Sun<sup>\*</sup>(Equal contribution), Pengfei Zhu<sup>†</sup>, Qinghua Hu,
